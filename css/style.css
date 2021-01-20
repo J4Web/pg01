@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+a{
+    
+    color: white;
+}
+header
+{
+    width: 100%; height: 100vh;
+    background-image: url(../img/london.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 12vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.3);
+}
+nav .logo
+{
+    width: 25%;
+    text-align: center;
+}
+nav .menu
+{
+    width: 40%;
+    display: flex;
+
+    justify-content: space-around;
+}
+
+nav .menu a:first-child
+{
+    color: #00b894;;
+}
+nav .menu>a{
+    width: 25%;
+    text-decoration: none;
+    font-weight: 900;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+section h3{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section span{
+    color: seashell;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform:uppercase
+}
+section p{
+    font-size: 25px;
+    color: #eee;
+    word-spacing: 2px;
+    margin-bottom: 4px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 13px 30px;
+    border-radius: 4.5px;
+    position: relative;;
+    top: 8.6px;
+    margin: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5 ease-in;
+}
+
+section .btn1
+{
+    background: #fff;
+    color: #000;
+}
+.btn1:hover
+{
+    background:#00b894;
+    color: #fff;
+}
+.btn2:hover{
+    background: #fff;
+    color: #000;
+}
+
+section .btn2
+{
+    background:#00b894;
+    color: #fff;
+}
+
+.change_content:after
+{
+    content: "";
+    animation: changetext 5s infinite Linear;
+    color: #00b894;
+}
+@keyframes changetext
+{
+    0%{content: "London Eye";}
+    20%{content: "Big Ben";}
+    35%{content:"Wallington";}
+    60%{content: "Bromley";}
+    80%{content: "Croydon";}
+    100%{content: "Twinckenham";}
+
+}
